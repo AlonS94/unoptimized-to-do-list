@@ -1,0 +1,56 @@
+$bc: #FFF8F4;
+$bs: rgba(0, 0, 0, 0.15);
+
+.modalWindow {
+  position: absolute;
+  border-radius: 5px;
+  top: 3px;
+  right: -227px;
+  width: 240px;
+  height: 105px;
+  padding: 12px 16px;
+  background-color: $bc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px $bs;
+
+  &__description {
+    display: flex;
+    align-items: start;
+  }
+
+  &__text {
+    margin-left: 10px;
+  }
+
+  &__buttonWrapper {
+    align-self: end;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 8px;
+    &_yes{
+      color: #FFFFFF;
+      background-color: #1890FF;
+    }
+    &_no{
+      color: #595959;
+      border: 1px solid #D9D9D9;
+    }
+  }
+
+  &__arrow {
+    color: $bc;
+    position: absolute;
+    top: 15px;
+    left: -6px;
+  }
+}

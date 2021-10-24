@@ -1,0 +1,25 @@
+$headClr: rgba(175, 47, 47, 0.15);
+$bg: rgba(0, 0, 0, 0.003);
+$bs: inset 0 -2px 1px rgb(0 0 0 / 3%);
+
+.header {
+  &__heading {
+    position: absolute;
+    top: -140px;
+    width: 100%;
+    font-size: 80px;
+    font-weight: 200;
+    text-align: center;
+    color: $headClr;
+  }
+
+  &__newTodo {
+    padding: 16px 16px 16px 60px;
+    width: 100%;
+    border: none;
+    background: $bg;
+    box-shadow:$bs;
+  }
+}
+
+

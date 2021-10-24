@@ -1,0 +1,32 @@
+$borderClr :  rgba(175, 47, 47, 0.2);
+$hoverBorder: rgba(175, 47, 47, 0.1);
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 205px;
+  padding: 0;
+
+  &__item {
+    list-style: none;
+  }
+
+  &__filter {
+    background-color: transparent;
+    padding: 3px 7px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: inherit;
+    &:not(.filters__filter_active) {
+      cursor: pointer;
+    }
+    &:hover{
+      border-color: $hoverBorder;
+    }
+
+    &_active {
+      border-color: $borderClr;
+    }
+  }
+}

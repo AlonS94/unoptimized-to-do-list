@@ -1,0 +1,25 @@
+$cancelClr: red;
+
+.todoEdit{
+  &__edit{
+    width: 100%;
+    position: relative;
+    padding: 15px 85px 15px 60px;
+    font-size: 24px;
+    list-style: none;
+  }
+  &__btn{
+    top:20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    &_ok{
+      right: 10px;
+    }
+    &_cancel{
+      right: 45px;
+      color: $cancelClr;
+    }
+  }
+}

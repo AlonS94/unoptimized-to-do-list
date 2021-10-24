@@ -1,0 +1,14 @@
+.todoList {
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+  &__listItem {
+    position: relative;
+    list-style: none;
+  }
+}
+
+.hidden{
+  display: none;
+}
